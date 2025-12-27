@@ -5,6 +5,8 @@ UR-Vault has been built primarily to provide complete privacy and security with 
 - No password or numeric pin that is generated for a website or service is stored.
 - No data can be exported out of UR-Vault in plain text. 
 
+![Flow](../images/flow.png)
+
 ### How is data stored?
 - UR-Vault stores all the data on your device. The data is stored on the Android keystore. 
 
