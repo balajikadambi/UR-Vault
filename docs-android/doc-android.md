@@ -6,8 +6,7 @@ UR-Vault has been built primarily to provide complete privacy and security with 
 - No data can be exported out of UR-Vault in plain text. 
 
 ### How is data stored?
-- UR-Vault stores all the data on your device. The data is stored on the macOS/iOS keychain. The syncing of data between your apple devices uses Apple [iCloud Keychain sync](https://support.apple.com/en-in/109016). 
-For more details, please refer [iCloud Keychain security overview](https://support.apple.com/en-in/guide/security/sec1c89c6f3b/web)
+- UR-Vault stores all the data on your device. The data is stored on the Android keystore. 
 
 ### What data is stored?
 - Password or numeric pin generation settings are stored for every site that cannot be viewed again once generated.
