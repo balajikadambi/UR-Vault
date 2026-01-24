@@ -1,1 +1,154 @@
-<HTML>In Progress</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Install UR-Vault</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --apple-black: #000;
+      --google-green: #1a73e8;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .store-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    a.button {
+      text-decoration: none;
+      padding: 14px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: block;
+    }
+
+    a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .apple {
+      background: var(--apple-black);
+      color: #fff;
+    }
+
+    .google {
+      background: var(--google-green);
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Install UR-Vault</h1>
+    <p class="subtitle">
+      Secure. Simple. Cross-platform password manager.
+    </p>
+
+    <div class="grid">
+
+      <!-- Apple App Store -->
+      <div class="card">
+        <h2>Apple App Store</h2>
+        <div class="store-buttons">
+          <a class="button apple" href="https://apps.apple.com/us/app/ur-vault/id6756403309?platform=mac" target="_blank">
+            Download for macOS
+          </a>
+          <a class="button apple" href="https://apps.apple.com/us/app/ur-vault/id6756403309" target="_blank">
+            Download for iPhone
+          </a>
+          <a class="button apple" href="https://apps.apple.com/us/app/ur-vault/id6756403309?platform=ipad" target="_blank">
+            Download for iPad
+          </a>
+        </div>
+      </div>
+
+      <!-- Google Play Store -->
+      <div class="card">
+        <h2>Google Play Store</h2>
+        <div class="store-buttons">
+          <a class="button google" href="https://play.google.com/store/apps/details?id=com.bkadambi.passwordmanager" target="_blank">
+            Download for Android
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 UR-Vault. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
+
