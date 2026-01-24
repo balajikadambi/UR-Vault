@@ -1,1 +1,149 @@
-<HTML>In Progress</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Install UR-Vault Browser Extensions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --chrome-blue: #4285f4;
+      --firefox-orange: #ff7139;
+      --safari-teal: #0a84ff;
+      --bg: #f5f7fb;
+      --card: #fff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 0.3rem;
+      font-size: 2.4rem;
+    }
+
+    p.subtitle {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      margin: 0 0 0.9rem;
+      font-size: 1.3rem;
+    }
+
+    .btn {
+      display: block;
+      margin: 8px 0;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      color: #fff;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .chrome { background: var(--chrome-blue); }
+    .firefox { background: var(--firefox-orange); }
+    .safari { background: var(--safari-teal); }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Install UR-Vault Browser Extension</h1>
+    <p class="subtitle">Get UR-Vault in your favorite browser</p>
+
+    <div class="grid">
+
+      <!-- Chrome -->
+      <div class="card">
+        <h2>Google Chrome</h2>
+        <a class="btn chrome"
+           href="https://chromewebstore.google.com/detail/ur-vault/lhdhmjcbaflgjhnmenblhocnempfcacm"
+           target="_blank">
+          Install from Chrome Web Store
+        </a>
+      </div>
+
+      <!-- Firefox -->
+      <div class="card">
+        <h2>Mozilla Firefox</h2>
+        <a class="btn firefox"
+           href="https://addons.mozilla.org/en-GB/firefox/addon/ur-vault/"
+           target="_blank">
+          Install from Firefox Add-ons
+        </a>
+      </div>
+
+      <!-- Safari iPhone/iPad -->
+      <div class="card">
+        <h2>Safari Extensions</h2>
+        <a class="btn safari"
+           href="https://apps.apple.com/in/app/ur-vault-extn/id6757325385"
+           target="_blank">
+          Safari (iPhone)
+        </a>
+        <a class="btn safari"
+           href="https://apps.apple.com/in/app/ur-vault-extn/id6757325385?platform=ipad"
+           target="_blank">
+          Safari (iPad)
+        </a>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 UR-Vault. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
