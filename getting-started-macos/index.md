@@ -1,12 +1,12 @@
 # Getting started with UR-Vault on macOS
 
-[Install UR-Vault](#1-install-ur-vault-from-appstore)
-[Install browser extension](#2-install-browser-extension)
-[Generate password for a website or service](#3-password-generation-for-a-website)
-[Rotate password](#4-rotate-password-for-a-website)
-[Migrate passwords from other providers](#5-migrate-passwords-from-other-providers)
-[Manage stored data](#5-manage-stored-data)
-[Backup and restore data](#6-backup-and-restore-websites-data)
+1. [Install UR-Vault](#1-install-ur-vault-from-appstore)
+2. [Install browser extension](#2-install-browser-extension)
+3. [Generate password for a website or service](#3-password-generation-for-a-website)
+4. [Rotate password](#4-rotate-password-for-a-website)
+5. [Migrate passwords from other providers](#5-migrate-passwords-from-other-providers)
+6. [Manage stored data](#5-manage-stored-data)
+7. [Backup and restore data](#6-backup-and-restore-websites-data)
 
 
 ### 1. Install UR-Vault from AppStore
