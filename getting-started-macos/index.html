@@ -114,114 +114,142 @@ html {
   <header>
     <h1>Getting Started with UR-Vault on macOS</h1>
   </header>
-<nav class="toc">
-  <h2>On this page</h2>
-  <ul>
-    <li><a href="#install">1. Install UR-Vault</a></li>
-    <li><a href="#browser-extension">2. Install Browser Extension</a></li>
-    <li><a href="#password-generation">3. Generate Passwords</a></li>
-    <li><a href="#password-rotation">4. Rotate Passwords</a></li>
-    <li><a href="#migration-backup">5. Migration, Backup & Restore</a></li>
-  </ul>
-</nav>
+  <nav class="toc">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#install">1. Install UR-Vault from AppStore</a></li>
+      <li><a href="#browser-extension">2. Install browser extension</a></li>
+      <li><a href="#password-generation">3. Password generation for a website</a></li>
+      <li><a href="#password-rotation">4. Rotate password</a></li>
+      <li><a href="#migration">5. Migrate passwords from other providers</a></li>
+      <li><a href="#manage-data">6. Manage stored data</a></li>
+      <li><a href="#backup-restore">7. Backup and restore data</a></li>
+    </ul>
+  </nav>
 
-  <!-- Install -->
   <section id="install">
-    <h2>1. Install UR-Vault</h2>
-    <p>Download UR-Vault for macOS from the App Store:</p>
-    <p><a href="https://apps.apple.com/in/app/ur-vault/id6756403309" target="_blank">https://apps.apple.com/in/app/ur-vault/id6756403309</a></p>
+    <h2>1. Install UR-Vault from AppStore</h2>
+    <p>UR-Vault for macOS can be installed from:<br>
+    <a href="https://apps.apple.com/in/app/ur-vault/id6756403309" target="_blank">https://apps.apple.com/in/app/ur-vault/id6756403309</a></p>
 
-    <h3 class="step-title">1.1 Launch the app</h3>
+    <h3 class="step-title">1.1 Launch UR-Vault after device authentication</h3>
     <img src="images/device_auth_login.png" alt="Device Authentication Login"/>
-    <p>Authenticate using your device credentials, then sign in with your Apple ID:</p>
+
+    <h3 class="step-title">1.2 Sign in using Apple ID</h3>
     <img src="images/apple_sign_in.png" alt="Sign in using Apple ID"/>
   </section>
 
-  <!-- Browser Extension -->
   <section id="browser-extension">
-    <h2>2. Install Browser Extension</h2>
-    <p>To enable auto-fill for passwords, install the <code>UR-Vault</code> browser extension.</p>
-    <p>Follow installation instructions here: <a href="https://balajikadambi.github.io/UR-Vault/browser-support/" target="_blank">Browser Support Guide</a></p>
+    <h2>2. Install browser extension</h2>
+    <p>Click on the link for instructions to install the <code>UR-Vault</code> extension on the browser. The extension enables auto-fill of new and rotated passwords.</p>
+    <p>For installing browser extensions, please refer to: <a href="https://balajikadambi.github.io/UR-Vault/browser-support/" target="_blank">https://balajikadambi.github.io/UR-Vault/browser-support/</a>.</p>
     <img src="images/install_browser_extn.png" alt="Install Browser Extension"/>
 
-    <h3 class="step-title">2.1 Configure Integration</h3>
-    <p>Open the app settings to configure the port number.</p>
+    <h3 class="step-title">2.1 Configure settings on UR-Vault App for browser integration</h3>
+    <p>Go to <code>Settings</code> on <code>UR-Vault</code> App.</p>
     <img src="images/app_settings.png" alt="UR-Vault Settings"/>
+
+    <p>Change the Port number on Settings App if needed:</p>
     <img src="images/change_port.png" alt="Change Port Number"/>
-    <p>Then set the same port in the extension’s “Configuration” tab:</p>
+
+    <p>Open the <code>Configuration</code> tab on browser extension. Change the port number to match the port number set on the <code>UR-Vault</code> App. Click on <code>Connection</code> icon.</p>
     <img src="images/test_connection.png" alt="Test Connection"/>
+
+    <p>Once the connection is successful, save the port number by clicking on <code>Save</code> button.</p>
     <img src="images/save_port.png" alt="Save Port"/>
 
-    <p>In the “Autofill” tab, register the extension with the app:</p>
+    <p>Next on the <code>Autofill</code> tab, click on <code>Register with UR-Vault App</code> button.</p>
     <img src="images/register_urvault.png" alt="Register with UR-Vault App"/>
     <img src="images/registered.png" alt="Extension Registered"/>
   </section>
 
-  <!-- Password Generation -->
   <section id="password-generation">
-    <h2>3. Generate Passwords for a Website</h2>
-    <p>Navigate to a website in your browser (e.g., <em>http://localhost:3000/home.html</em>) and launch the extension to copy the domain name:</p>
+    <h2>3. Password generation for a website</h2>
+    <p>Open a website on the browser (e.g. http://localhost:3000/home.html).<br>
+    Open the extension and copy the website name.</p>
     <img src="images/copy_website_name.png" alt="Copy Website Name"/>
 
-    <p>Open the UR-Vault App → <strong>Manage Passwords → Generate</strong>. Paste the site name:</p>
+    <p>Open the <code>UR-Vault</code> App. Go to <code>Manage Passwords</code>. Select <code>Generate</code>. Click on <code>Paste</code> icon to paste the website name.</p>
     <img src="images/paste_website_name.png" alt="Paste Website Name"/>
 
-    <p>Fill account nickname, username, and password rules (use the chat assistant if needed):</p>
+    <p>Enter <code>Account nickname</code> and <code>username</code>.</p>
     <img src="images/account_details.png" alt="Account Details"/>
+
+    <p>Enter <code>Password rules</code> for the website. You can use the <code>Chat Assistant</code> to get password rules for public websites.</p>
     <img src="images/choose_rules.png" alt="Choose Rules"/>
 
+    <p>Enter a unique secret name for the password generation. It can be the default secret configured on the <code>Settings</code> page.</p>
     <div class="note">
-      <strong>Note:</strong> Change the default secret on the Settings page before selecting here.
+      <strong>Note:</strong> Please change the default secret value on Settings page before selection on this page.
     </div>
-
-    <p>Enter a secret name then generate the password:</p>
     <img src="images/enter_secret_gen.png" alt="Enter Secret Name"/>
+
+    <p>Click on <code>Generate</code> to generate the password. The passwords are now copied to clipboard in encrypted format.</p>
     <img src="images/generate_pass.png" alt="Generate Password"/>
 
-    <p>Go back to the browser extension’s Autofill tab and load the generated passwords:</p>
+    <p>Next, go back to the browser extension Autofill tab.<br>
+    Select the option <code>Fill passwords generated on UR-Vault App</code>. Click on <code>Paste</code> icon to load the passwords.</p>
     <img src="images/load_gen_passwords.png" alt="Load Generated Passwords"/>
 
-    <p>Auto-fill - select username &amp; password:</p>
+    <p>Now the username and password are available on the webpage for auto-fill into text fields. Please click on the <code>UR-Vault</code> icon at the right end of the text field to display list of options for autofill.</p>
     <img src="images/autofill_user.png" alt="Autofill Username"/>
     <img src="images/autofill_pass.png" alt="Autofill Password"/>
 
-    <p>Once successful, store the password inside the app:</p>
-    <img src="images/store_pass.png" alt="Store Password"/>
+    <p>Once the password works on the website, store the password on <code>UR-Vault</code> App.</p>
     <div class="note">
-      <strong>Important:</strong> Generated passwords must be stored within the app to be available later.
+      <strong>Important:</strong> The generated password will not be available on the App if it is not stored.
     </div>
+    <img src="images/store_pass.png" alt="Store Password"/>
+
+    <div class="note">
+      <strong>Important:</strong> The password for a website or service can be viewed by selecting the <code>View</code> option. The <code>Account nickname</code> and <code>username</code> can be updated using the <code>Update</code> option.<br>
+      For subsequent login to the webpage, you can use the option <code>UR-Vault App</code> for <code>Select source for passwords</code> to load the passwords.<br>
+      First select <code>Find</code> to find a match on the stored websites, and then click on <code>Load password</code>.
+    </div>
+    <img src="images/find_match.png" alt="Find Match"/>
+    <img src="images/load_pass.png" alt="Load Password"/>
   </section>
 
-  <!-- Password Rotation -->
   <section id="password-rotation">
-    <h2>4. Rotate Password for a Website</h2>
-    <p>From Manage Passwords → <strong>Rotate</strong>, enter website details (from the extension):</p>
+    <h2>4. Rotate password for a website</h2>
+    <p>Go to <code>Manage Passwords</code> on <code>UR-Vault</code> App and select <code>Rotate</code> option. Enter all the details. The website name can be got from the browser extension.</p>
     <img src="images/enter_rotate_acc.png" alt="Enter Rotate Account"/>
 
-    <p>Generate new and current encrypted passwords:</p>
+    <p>Click on <code>Generate</code>. The current and new passwords are encrypted and copied to clipboard.</p>
     <img src="images/rotate_gen_pass.png" alt="Generate Rotated Passwords"/>
 
-    <p>Autofill in the extension:</p>
+    <p>Next, go back to the browser extension Autofill tab.<br>
+    Select the option <code>Fill passwords generated on UR-Vault App</code>. Click on <code>Paste</code> icon to load the passwords.</p>
     <img src="images/load_change_pass.png" alt="Load Changed Password"/>
 
-    <p>Select current and new passwords:</p>
+    <p>Select the <code>Current:</code> option for the current password.</p>
     <img src="images/enter_old_pass.png" alt="Current Password"/>
+
+    <p>Select the <code>New:</code> option for the new password.</p>
     <img src="images/enter_new_pass.png" alt="New Password"/>
 
-    <p>Store the updated password:</p>
+    <p>Once the new password works on the website, store the password on <code>UR-Vault</code> App.</p>
+    <div class="note">
+      <strong>Important:</strong> The generated password will not be available on the App if it is not stored.
+    </div>
     <img src="images/store_pass.png" alt="Store Password"/>
-    <div class="note">Generated rotated passwords must be saved in the app to persist.</div>
   </section>
 
-  <!-- Migration & Backup -->
-  <section id="migration-backup">
-    <h2>5. Migrate Passwords from Other Providers</h2>
+  <section id="migration">
+    <h2>5. Migrate passwords from other providers</h2>
+    <p>Go to <code>Manage Passwords migration</code> on <code>UR-Vault</code> App.</p>
     <img src="images/password_migration.png" alt="Password Migration"/>
+  </section>
 
-    <h2>6. Manage Stored Data</h2>
+  <section id="manage-data">
+    <h2>6. Manage stored data</h2>
+    <p>Go to <code>Manage stored data</code> on <code>UR-Vault</code> App. The data that is not needed can be deleted.</p>
     <img src="images/manage_stored_data.png" alt="Manage Stored Data"/>
+  </section>
 
-    <h2>7. Backup & Restore</h2>
+  <section id="backup-restore">
+    <h2>7. Backup and restore data</h2>
+    <p>Go to <code>Backup and restore</code> on <code>UR-Vault</code> App.</p>
     <img src="images/backuprestore.png" alt="Backup and Restore"/>
   </section>
 
