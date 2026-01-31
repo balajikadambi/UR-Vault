@@ -86,6 +86,7 @@ Once the password works on the website, store the password on `UR-Vault` App.
 
 ![](images/store_pass.png)
 
+> Important: The password for a website or service can be viewed by selecting the `View` option. The `Account nickname` and `username` can be updated using the `Update` option.
 For subsequent login to the webpage, you can use the option `UR-Vault App` for `Select source for passwords` to load the passwords.
 First select `Find` to find a match on the stored websites, and then click on `Load password`.
 
