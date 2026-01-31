@@ -81,9 +81,61 @@ Now the username and password are available on the webpage for auto-fill into te
 ![](images/autofill_user.png)
 ![](images/autofill_pass.png)
 
+Once the password works on the website, store the password on `UR-Vault` App.
+> Important: The generated password will not be available on the App if it is not stored.
+
+![](images/store_pass.png)
+
+For subsequent login to the webpage, you can use the option `UR-Vault App` for `Select source for passwords` to load the passwords.
+First select `Find` to find a match on the stored websites, and then click on `Load password`.
+
+![](images/find_match.png)
+![](images/load_pass.png)
+
+### 4. Rotate password for a website
+
+Go to `Manage Passwords` on `UR-Vault` App and select `Rotate` option. Enter all the details. The website name can be got from the browser extension.
+
+![](images/enter_rotate_acc.png)
+
+Click on `Generate`. The current and new passwords are encrypted and copied to clipboard.
+
+![](images/rotate_gen_pass.png)
+
+Next, go back to the browser extension Autofill tab.
+Select the option `Fill passwords generated on UR-Vault App`. Click on `Paste` icon to load the passwords.
+
+![](images/load_change_pass.png)
+
+Select the `Current:` option for the current password.
+![](images/enter_old_pass.png)
+
+Select the `New:` option for the new password.
+![](images/enter_new_pass.png)
+
+Once the new password works on the website, store the password on `UR-Vault` App.
+> Important: The generated password will not be available on the App if it is not stored.
+![](images/store_pass.png)
 
 
+### 5. Migrate passwords from other providers
 
+Go to `Manage Passwords migration` on `UR-Vault` App.
+
+![](images/password_migration.png)
+
+### 5. Manage stored data 
+
+Go to `Manage stored data` on `UR-Vault` App. The data that is not needed can be deleted.
+
+![](images/manage_stored_data.png)
+
+
+### 6. Backup and restore websites data 
+
+Go to `Backup and restore` on `UR-Vault` App. 
+
+![](images/backuprestore.png)
 
 
 
