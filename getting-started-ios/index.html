@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Getting Started with UR-Vault on iOS</title>
+
+  <!-- Professional styling -->
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Page container */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    h1 { font-size: 2rem; margin-top: 20px; }
+    h2 { font-size: 1.5rem; margin-top: 18px; }
+    h3 { font-size: 1.25rem; margin-top: 14px; }
+
+    p { margin: 10px 0; }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 12px 0;
+      display: block;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Section styles */
+    section {
+      background: #fff;
+      padding: 18px 24px;
+      margin: 18px 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .note {
+      background: #eaf7ff;
+      border-left: 4px solid #3896e9;
+      padding: 10px 14px;
+      margin: 16px 0;
+    }
+
+    /* Code-style link */
+    a.code-link {
+      font-family: monospace;
+      background: #eef;
+      padding: 3px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    /* Autofill block */
+    .step-title {
+      margin-top: 14px;
+      font-weight: bold;
+      color: #0056b3;
+    }
+    /* Table of contents */
+.toc {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0 30px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.toc h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin: 8px 0;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 500;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Getting Started with UR-Vault on iOS</h1>
+  </header>
+  <nav class="toc">
+    <ul>
+      <li><a href="#install">1. Install UR-Vault from AppStore</a></li>
+      <li><a href="#browser-extension">2. Install browser extension</a></li>
+      <li><a href="#password-generation">3. Password generation for a website</a></li>
+      <li><a href="#autofill">4. Autofill passwords for a website</a></li>
+      <li><a href="#password-rotation">5. Rotate password for a website</a></li>
+      <li><a href="#migration">6. Migrate passwords from other providers</a></li>
+      <li><a href="#manage-data">7. Manage stored data</a></li>
+      <li><a href="#backup-restore">8. Backup and restore websites data</a></li>
+    </ul>
+  </nav>
+
+  <section id="install">
+    <h2>1. Install UR-Vault from AppStore</h2>
+    <p>UR-Vault for iOS can be installed from:<br>
+    <a href="https://apps.apple.com/in/app/ur-vault/id6756403309" target="_blank">https://apps.apple.com/in/app/ur-vault/id6756403309</a></p>
+
+    <h3 class="step-title">1.1 Launch UR-Vault after device authentication</h3>
+    <p>Open the installed UR-Vault and authenticate.</p>
+
+    <h3 class="step-title">1.2 Sign in using Apple ID</h3>
+    <img src="images/apple_sign_in.png" alt="Sign in using Apple ID"/>
+  </section>
+
+  <section id="browser-extension">
+    <h2>2. Install browser extension</h2>
+    <p>Click on the link for instructions to install the <code>UR-Vault</code> extension on the browser. The extension enables auto-fill of new and rotated passwords.</p>
+    <p>For installing browser extensions, please refer to: <a href="https://balajikadambi.github.io/UR-Vault/browser-support/" target="_blank">https://balajikadambi.github.io/UR-Vault/browser-support/</a>.</p>
+    <img src="images/install_browser_extn.png" alt="Install Browser Extension"/>
+    <div class="note">
+      Select Safari for iOS for installation
+    </div>
+
+    <h3 class="step-title">2.1 Configure settings on UR-Vault App for browser integration</h3>
+    <div class="note">
+      For macOS, there is an option for the browser to register itself with UR-Vault App. For iOS, please follow the manual steps below.
+    </div>
+
+    <p>Open the <code>UR-Vault extension</code> App for Safari.</p>
+    <img src="images/safari_extension.png" alt="Safari Extension"/>
+
+    <p>Copy the <code>Browser ID</code> on the Configuration tab.</p>
+    <img src="images/copy_browser_id.png" alt="Copy Browser ID"/>
+
+    <p>Go to <code>Settings</code> on <code>UR-Vault</code> App.</p>
+    <img src="images/click_settings.png" alt="Click Settings"/>
+
+    <p>Paste the <code>Browser ID</code> for Safari.</p>
+    <img src="images/paste_browser_id.png" alt="Paste Browser ID"/>
+
+    <p>Save settings.</p>
+    <img src="images/save_settings.png" alt="Save Settings"/>
+  </section>
+
+  <section id="password-generation">
+    <h2>3. Password generation for a website</h2>
+    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#password-generation" target="_blank">link</a> to generate a password configuration for a website and save on the <code>UR-Vault</code> App.</p>
+  </section>
+
+  <section id="autofill">
+    <h2>4. Autofill passwords for a website</h2>
+    <p>Generate the password for the website or service from the stored configuration. Go to <code>Manage passwords</code> on the <code>UR-Vault</code> App and select <code>View</code> option.</p>
+    <p>Select the details for the website or service.</p>
+    <img src="images/view_pass_1.png" alt="View Password 1"/>
+    <img src="images/view_pass_2.png" alt="View Password 2"/>
+
+    <p>Generate the password.</p>
+    <img src="images/click_view_pass.png" alt="Click View Password"/>
+
+    <p>Click on <code>Extensions icon</code> on the broswer URL bar.</p>
+    <img src="images/locate_extension.png" alt="Locate Extension"/>
+
+    <p>Click on the <code>UR-Vault extension</code>.</p>
+    <img src="images/extensions_click.png" alt="Click Extension"/>
+
+    <p>Paste the passwords that have been copied.</p>
+    <img src="images/paste_passwords.png" alt="Paste Passwords"/>
+
+    <p>Now the username and passwords are available on the webpage for autofill.</p>
+    <p>Autofill username.</p>
+    <img src="images/pop_username.png" alt="Populate Username"/>
+
+    <p>Autofill password.</p>
+    <img src="images/pop_passwords.png" alt="Populate Password"/>
+  </section>
+
+  <section id="password-rotation">
+    <h2>5. Rotate password for a website</h2>
+    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#password-rotation" target="_blank">link</a> to rotate a password configuration for a website and save on the <code>UR-Vault</code> App.</p>
+  </section>
+
+  <section id="migration">
+    <h2>6. Migrate passwords from other providers</h2>
+    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#migration" target="_blank">link</a> to migrate passwords from other providers and save on the <code>UR-Vault</code> App.</p>
+  </section>
+
+  <section id="manage-data">
+    <h2>7. Manage stored data</h2>
+    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#manage-data" target="_blank">link</a> to manage stored data on the <code>UR-Vault</code> App.</p>
+  </section>
+
+  <section id="backup-restore">
+    <h2>8. Backup and restore websites data</h2>
+    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#backup-restore" target="_blank">link</a> to backup and restore websites data on the <code>UR-Vault</code> App.</p>
+  </section>
+
+</body>
+</html>
