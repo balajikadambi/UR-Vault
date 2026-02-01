@@ -106,10 +106,36 @@ html {
   scroll-behavior: smooth;
 }
 
+    /* Top Navigation */
+    .top-nav {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .top-nav a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+    .top-nav a:hover, .top-nav a.active {
+      color: #0056b3;
+      border-bottom-color: #0056b3;
+    }
   </style>
 </head>
 
 <body>
+
+  <nav class="top-nav">
+    <a href="../getting-started-macos/">macOS</a>
+    <a href="../getting-started-ios/" class="active">iOS</a>
+  </nav>
 
   <header>
     <h1>Getting Started with UR-Vault on iOS</h1>
