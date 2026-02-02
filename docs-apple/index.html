@@ -48,6 +48,19 @@
       margin-bottom: 20px;
       border-radius: 4px;
     }
+    .support-matrix {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+    .support-matrix th, .support-matrix td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    .support-matrix th {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
 <body>
@@ -59,6 +72,28 @@
         <li>To get started on iOS, please refer <a href="https://balajikadambi.github.io/UR-Vault/getting-started-ios/">Documentation for iOS</a>.</li>
       </ul>
     </div>
+    <h3>Browser Integration Support Matrix</h3>
+    <table class="support-matrix">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>macOS</th>
+          <th>iOS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Browser Registration</td>
+          <td>Automated</td>
+          <td>Manual</td>
+        </tr>
+        <tr>
+          <td>Password Autofill</td>
+          <td>Automated loading</td>
+          <td>Generate in App, Paste in Extension</td>
+        </tr>
+      </tbody>
+    </table>
     <h2>Why UR-Vault?</h2>
     <p>UR-Vault has been built primarily to provide complete privacy and security with transparency.</p>
     <ul>

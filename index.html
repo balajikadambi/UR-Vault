@@ -107,6 +107,30 @@
     footer a:hover {
       color: #0056b3;
     }
+
+    .feature-matrix {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .feature-matrix th, .feature-matrix td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    .feature-matrix th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+      color: #444;
+    }
+    .tick {
+      color: #28a745;
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
@@ -128,6 +152,96 @@
           <h3>Install UR-Vault</h3>
           <p>Download links for macOS, iOS, and Android.</p>
         </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Product Feature Support Matrix</h2>
+      <div style="overflow-x: auto;">
+        <table class="feature-matrix">
+          <thead>
+            <tr>
+              <th>Product feature</th>
+              <th>macOS</th>
+              <th>iOS</th>
+              <th>Android</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Biometric authentication</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Generate password with custom rules</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Rotate password</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Set password policy for rotation</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Migrate passwords from other password managers</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>View passwords</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Chat assistant to query for password rules</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Backup and Restore</td>
+              <td>Automated</td>
+              <td>Automated</td>
+              <td>Manual</td>
+            </tr>
+            <tr>
+              <td>Fine grained delete of stored password configuration</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Delete all application data</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Delete account</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Browser integration</td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 

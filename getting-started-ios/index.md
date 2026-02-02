@@ -1,5 +1,12 @@
 # Getting started with UR-Vault on iOS
 
+### Browser Integration Support Matrix
+
+| Feature | iOS |
+| :--- | :--- |
+| Browser Registration | Manual |
+| Password Autofill | Generate in App, Paste in Extension |
+
 1. [Install UR-Vault](#1-install-ur-vault-from-appstore)
 2. [Install browser extension](#2-install-browser-extension)
 3. [Generate password for a website or service](#3-password-generation-for-a-website)
