@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Getting Started with UR-Vault on Android</title>
-
-  <!-- Professional styling -->
   <style>
     /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -19,11 +17,7 @@
       padding: 20px;
     }
 
-    h1, h2, h3 {
-      margin-bottom: 12px;
-      color: #222;
-    }
-
+    h1, h2, h3 { margin-bottom: 12px; color: #222; }
     h1 { font-size: 2rem; margin-top: 20px; }
     h2 { font-size: 1.5rem; margin-top: 18px; }
     h3 { font-size: 1.25rem; margin-top: 14px; }
@@ -53,58 +47,26 @@
       margin: 16px 0;
     }
 
-    /* Code-style link */
-    a.code-link {
-      font-family: monospace;
-      background: #eef;
-      padding: 3px 6px;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-
-    /* Autofill block */
     .step-title {
       margin-top: 14px;
       font-weight: bold;
       color: #0056b3;
     }
+
     /* Table of contents */
-.toc {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 20px 0 30px 0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
+    .toc {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0 30px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .toc ul { list-style: none; padding-left: 0; }
+    .toc li { margin: 8px 0; }
+    .toc a { text-decoration: none; color: #0056b3; font-weight: 500; }
+    .toc a:hover { text-decoration: underline; }
 
-.toc h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.toc ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.toc li {
-  margin: 8px 0;
-}
-
-.toc a {
-  text-decoration: none;
-  color: #0056b3;
-  font-weight: 500;
-}
-
-.toc a:hover {
-  text-decoration: underline;
-}
-
-/* Optional: smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
+    html { scroll-behavior: smooth; }
 
     /* Top Navigation */
     .top-nav {
@@ -127,11 +89,25 @@ html {
       color: #0056b3;
       border-bottom-color: #0056b3;
     }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: 500;
+    }
+    .home-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
-
 <body>
-
+  <div style="padding: 10px 0;">
+    <a href="../" class="home-link">
+      <span style="font-size: 1.2rem; margin-right: 5px;">🏠</span> Home
+    </a>
+  </div>
   <nav class="top-nav">
     <a href="../getting-started-macos/">macOS</a>
     <a href="../getting-started-ios/">iOS</a>
@@ -141,6 +117,7 @@ html {
   <header>
     <h1>Getting Started with UR-Vault on Android</h1>
   </header>
+
   <nav class="toc">
     <ul>
       <li><a href="#install">1. Install UR-Vault from PlayStore</a></li>
@@ -163,31 +140,25 @@ html {
     <p>Open the installed UR-Vault and authenticate.</p>
 
     <h3 class="step-title">1.2 Sign in using Google Account</h3>
-    <img src="images/home.jpeg" alt="Sign in using Google Account"/>
+    <img src="images/home.jpeg" alt="Home Screen"/>
   </section>
 
   <section id="browser-extension">
     <h2>2. Install browser extension</h2>
     <p>Click on the link for instructions to install the <code>UR-Vault</code> extension on the browser. The extension enables auto-fill of new and rotated passwords.</p>
     <p>For installing browser extensions, please refer to: <a href="https://balajikadambi.github.io/UR-Vault/browser-support/" target="_blank">https://balajikadambi.github.io/UR-Vault/browser-support/</a>.</p>
+    <div class="note">Select Firefox for installation</div>
     <img src="images/install_browser_extn.png" alt="Install Browser Extension"/>
-    <div class="note">
-      Select Firefox for installation
-    </div>
 
     <h3 class="step-title">2.1 Configure settings on UR-Vault App for browser integration</h3>
     <p>Open the <code>UR-Vault extension</code> App for Firefox.</p>
     <img src="images/open_extension.jpeg" alt="Open Extension"/>
-
     <p>Copy the <code>Browser ID</code> on the Configuration tab.</p>
     <img src="images/copy_browser_id.jpeg" alt="Copy Browser ID"/>
-
     <p>Go to <code>Settings</code> on <code>UR-Vault</code> App.</p>
     <img src="images/click_settings.jpeg" alt="Click Settings"/>
-
     <p>Paste the <code>Browser ID</code> for Firefox.</p>
     <img src="images/paste_browser_id.jpeg" alt="Paste Browser ID"/>
-
     <p>Save settings by clicking on <code>Save</code> button.</p>
   </section>
 
@@ -195,32 +166,22 @@ html {
     <h2>3. Password generation for a website</h2>
     <p>On the browser extension <code>Configuration</code> tab, copy website name.</p>
     <img src="images/copy_website_name.jpeg" alt="Copy Website Name"/>
-
     <p>Go to <code>Manage passwords</code> on the <code>UR-Vault</code> App.</p>
-    <img src="images/manage_pass_click.jpeg" alt="Manage Passwords"/>
-
-    <p>Select <code>Generate</code> option.</p>
-    <p>Paste website name.</p>
-    <img src="images/paste_website.jpeg" alt="Paste Website Name"/>
-
+    <img src="images/manage_pass_click.jpeg" alt="Manage Passwords Click"/>
+    <p>Select <code>Generate</code> option. Paste website name.</p>
+    <img src="images/paste_website.jpeg" alt="Paste Website"/>
     <p>Enter <code>account details</code>.</p>
     <img src="images/enter_account_details.jpeg" alt="Enter Account Details"/>
-
     <p>Enter <code>password rules</code>.</p>
     <img src="images/pass_rules.jpeg" alt="Password Rules"/>
-
     <p>Enter <code>secret</code>.</p>
     <img src="images/enter_secret.jpeg" alt="Enter Secret"/>
-
     <p>Click on <code>Generate</code> to generate password.</p>
     <img src="images/gen_pass.jpeg" alt="Generate Password"/>
-
     <p>Paste passwords on the browser extension Autofill page.</p>
     <img src="images/paste_password.jpeg" alt="Paste Password"/>
-
     <p>The passwords are loaded and available on the webpage to be populated.</p>
     <img src="images/pop_password.jpeg" alt="Populate Password"/>
-
     <p>Once the password works on the website, store the password on the <code>UR-Vault</code> app.</p>
     <img src="images/store_pass.jpeg" alt="Store Password"/>
   </section>
@@ -228,8 +189,7 @@ html {
   <section id="autofill">
     <h2>4. Autofill passwords for a website</h2>
     <p>Generate the password for the website or service from the stored configuration. Go to <code>Manage passwords</code> on the <code>UR-Vault</code> App and select <code>View</code> option.</p>
-    <p>Select the details for the website or service. Generate the password.<br>
-    The passwords are copied to clipboard.</p>
+    <p>Select the details for the website or service. Generate the password. The passwords are copied to clipboard.</p>
     <p>Paste passwords on the browser extension Autofill page.</p>
     <img src="images/paste_password.jpeg" alt="Paste Password"/>
     <p>The passwords are loaded and available on the webpage to be populated.</p>
@@ -237,23 +197,22 @@ html {
 
   <section id="password-rotation">
     <h2>5. Rotate password for a website</h2>
-    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#password-rotation" target="_blank">link</a> to rotate a password configuration for a website and save on the <code>UR-Vault</code> App.</p>
+    <p>The procedure is the same as for macOS. Please refer this <a href="../getting-started-macos/#password-rotation">link</a> to rotate a password configuration for a website and save on the <code>UR-Vault</code> App.</p>
   </section>
 
   <section id="migration">
     <h2>6. Migrate passwords from other providers</h2>
-    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#migration" target="_blank">link</a> to migrate passwords from other providers and save on the <code>UR-Vault</code> App.</p>
+    <p>The procedure is the same as for macOS. Please refer this <a href="../getting-started-macos/#migration">link</a> to migrate passwords from other providers and save on the <code>UR-Vault</code> App.</p>
   </section>
 
   <section id="manage-data">
     <h2>7. Manage stored data</h2>
-    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#manage-data" target="_blank">link</a> to manage stored data on the <code>UR-Vault</code> App.</p>
+    <p>The procedure is the same as for macOS. Please refer this <a href="../getting-started-macos/#manage-data">link</a> to manage stored data on the <code>UR-Vault</code> App.</p>
   </section>
 
   <section id="backup-restore">
     <h2>8. Backup and restore websites data</h2>
-    <p>The procedure is the same as for macOS. Please refer this <a href="https://balajikadambi.github.io/UR-Vault/getting-started-macos/#backup-restore" target="_blank">link</a> to backup and restore websites data on the <code>UR-Vault</code> App.</p>
+    <p>The procedure is the same as for macOS. Please refer this <a href="../getting-started-macos/#backup-restore">link</a> to backup and restore websites data on the <code>UR-Vault</code> App.</p>
   </section>
-
 </body>
 </html>
