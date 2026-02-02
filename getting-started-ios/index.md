@@ -1,5 +1,7 @@
 # Getting started with UR-Vault on iOS
 
+[Why UR-Vault?](https://balajikadambi.github.io/UR-Vault/docs-apple/)
+
 ### Browser Integration Support Matrix
 
 | Feature | iOS |

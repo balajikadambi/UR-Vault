@@ -1,5 +1,7 @@
 # Getting started with UR-Vault on Android
 
+[Why UR-Vault?](https://balajikadambi.github.io/UR-Vault/docs-android/)
+
 1. [Install UR-Vault](#1-install-ur-vault-from-appstore)
 2. [Install browser extension](#2-install-browser-extension)
 3. [Generate password for a website or service](#3-password-generation-for-a-website)
