@@ -1,5 +1,7 @@
 # Getting started with UR-Vault on macOS
 
+[Watch Demo](urvault_demo.gif)
+
 ### Browser Integration Support Matrix
 
 | Feature | macOS |
